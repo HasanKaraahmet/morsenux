@@ -1,7 +1,7 @@
 #!/bin/bash
-#MorseBash v.1.0
+#MorseNux v.1.0
 #Copyright (c)2022 Hasan Y. Karaahmet (Callsign: TA1HYK) Istanbul-Turkiye
-#This script was written for HAMs worldwide and can be freely used and distributed without any restrictions.
+#This script was written for HAMs worldwide and can be freely used and distributed.
 #Recognized characters include the standard 26-letter English letters, numbers, punctuation marks, 
 #extended Latin characters used in the Turkish alphabet as well as many Morse-specific prosigns.
 #For all questions, comments and bug reports, please kindly email Hasan at hykaraahmet@yandex.com
