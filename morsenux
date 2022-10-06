@@ -1,0 +1,818 @@
+#!/bin/bash
+#MorseNux v.1.0
+#Copyright (c)2022 Hasan Y. Karaahmet (Callsign: TA1HYK) Istanbul-Turkiye
+#This script was written for HAMs worldwide and can be freely used and distributed without any restrictions.
+#Recognized characters include the standard 26-letter English letters, numbers, punctuation marks, 
+#extended Latin characters used in the Turkish alphabet as well as many Morse-specific prosigns.
+#For all questions, comments and bug reports, please kindly email Hasan at hykaraahmet@yandex.com
+#88!!!
+
+function MA()
+{
+#Morse Code - Generate Tone Alpha .-
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MB()
+{
+#Morse Code - Generate Tone Bravo -...
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MC()
+{
+#Morse Code - Generate Tone Charlie -.-.
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MD()
+{
+#Morse Code - Generate Tone Delta -..
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function ME()
+{
+#Morse Code - Generate Tone Echo .
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MF()
+{
+#Morse Code - Generate Tone Foxtrot ..-.
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MG()
+{
+#Morse Code - Generate Tone Golf --.
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MH()
+{
+#Morse Code - Generate Tone Hotel ....
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MI()
+{
+#Morse Code - Generate Tone India ..
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MJ()
+{
+#Morse Code - Generate Tone Juliet .---
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MK()
+{
+#Morse Code - Generate Tone Kilo -.-
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function ML()
+{
+#Morse Code - Generate Tone Lima .-..
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MM()
+{
+#Morse Code - Generate Tone Mike --
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MN()
+{
+#Morse Code - Generate Tone November -.
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MO()
+{
+#Morse Code - Generate Tone Oscar ---
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MP()
+{
+#Morse Code - Generate Tone Papa .--.
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MQ()
+{
+#Morse Code - Generate Tone Quebec --.-
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MR()
+{
+#Morse Code - Generate Tone Romeo .-.
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MS()
+{
+#Morse Code - Generate Tone Sierra ...
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function MT()
+{
+#Morse Code - Generate Tone Tango -
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MU()
+{
+#Morse Code - Generate Tone Uniform ..-
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MV()
+{
+#Morse Code - Generate Tone Victor ...-
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MW()
+{
+#Morse Code - Generate Tone Whiskey .--
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MX()
+{
+#Morse Code - Generate Tone X-Ray -..-
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MY()
+{
+#Morse Code - Generate Tone Yankee -.--
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function MZ()
+{
+#Morse Code - Generate Tone Zulu --..
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function M1()
+{
+#Morse Code - Generate Tone 1 .----
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function M2()
+{
+#Morse Code - Generate Tone 2 ..---
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function M3()
+{
+#Morse Code - Generate Tone 3 ...--
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function M4()
+{
+#Morse Code - Generate Tone 4 ....-
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function M5()
+{
+#Morse Code - Generate Tone 5 .....
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function M6()
+{
+#Morse Code - Generate Tone 6 -....
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function M7()
+{
+#Morse Code - Generate Tone 7 --...
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function M8()
+{
+#Morse Code - Generate Tone 8 ---..
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function M9()
+{
+#Morse Code - Generate Tone 9 ----.
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function M0()
+{
+#Morse Code - Generate Tone 0 -----
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function Mperiod()
+{
+#Morse Code - Generate Tone (.) .-.-.-
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function Mcomma()
+{
+#Morse Code - Generate Tone (,) --..--
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function Mquestion()
+{
+#Morse Code - Generate Tone (?) ..--..
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function Mapostrophe()
+{
+#Morse Code - Generate Tone (') .----.
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function Mexclamation()
+{
+#Morse Code - Generate Tone (!) -.-.--
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.15
+}
+
+function Mslash()
+{
+#Morse Code - Generate Tone (/) -..-.
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function Mampersand()
+{
+#Morse Code - Generate Tone (&) .-...
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+function Mcolon()
+{
+#Morse Code - Generate Tone (:) ---...
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.15
+}
+
+
+function morsetech()
+{
+# User-specified file to read from
+INPUT=/home/jimmy/Bash/file.txt
+ 
+# while go through the input file
+while IFS=""; read -sN1 char;
+do
+        # consider one character at a time
+   if [ "$char" = " " ] || [[ "$char" = $'\r' ]] || [[ "$char" = $'\n' ]]
+   then
+   	sleep 0.35
+   	echo " "
+	elif  [ "$char" = "A" ] || [ "$char" = "a" ]
+	then
+		echo -n "$char "
+		MA
+	elif [ "$char" = "B" ] || [ "$char" = "b" ]
+	then
+		echo -n "$char "		
+		MB
+	elif [ "$char" = "C" ] || [ "$char" = "c" ]
+	then
+		echo -n "$char "		
+		MC
+	elif [ "$char" = "D" ] || [ "$char" = "d" ]
+	then
+		echo -n "$char "		
+		MD
+	elif [ "$char" = "E" ] || [ "$char" = "e" ]
+	then
+		echo -n "$char "		
+		ME
+	elif [ "$char" = "F" ] || [ "$char" = "f" ]
+	then
+		echo -n "$char "		
+		MF
+	elif [ "$char" = "G" ] || [ "$char" = "g" ]
+	then
+		echo -n "$char "		
+		MG
+	elif [ "$char" = "H" ] || [ "$char" = "h" ]
+	then
+		echo -n "$char "		
+		MH
+	elif [ "$char" = "I" ] || [ "$char" = "i" ]
+	then
+		echo -n "$char "		
+		MI
+	elif [ "$char" = "J" ] || [ "$char" = "j" ]
+	then
+		echo -n "$char "		
+		MJ
+	elif [ "$char" = "K" ] || [ "$char" = "k" ]
+	then
+		echo -n "$char "		
+		MK
+	elif [ "$char" = "L" ] || [ "$char" = "l" ]
+	then
+		echo -n "$char "		
+		ML
+	elif [ "$char" = "M" ] || [ "$char" = "m" ]
+	then
+		echo -n "$char "		
+		MM
+	elif [ "$char" = "N" ] || [ "$char" = "n" ]
+	then
+		echo -n "$char "		
+		MN
+	elif [ "$char" = "O" ] || [ "$char" = "o" ]
+	then
+		echo -n "$char "		
+		MO
+	elif [ "$char" = "P" ] || [ "$char" = "p" ]
+	then
+		echo -n "$char "		
+		MP
+	elif [ "$char" = "Q" ] || [ "$char" = "q" ]
+	then
+		echo -n "$char "		
+		MQ
+	elif [ "$char" = "R" ] || [ "$char" = "r" ]
+	then
+		echo -n "$char "		
+		MR
+	elif [ "$char" = "S" ] || [ "$char" = "s" ]
+	then
+		echo -n "$char "		
+		MS
+	elif [ "$char" = "T" ] || [ "$char" = "t" ]
+	then
+		echo -n "$char "		
+		MT
+	elif [ "$char" = "U" ] || [ "$char" = "u" ]
+	then
+		echo -n "$char "		
+		MU
+	elif [ "$char" = "V" ] || [ "$char" = "v" ]
+	then
+		echo -n "$char "		
+		MV
+	elif [ "$char" = "W" ] || [ "$char" = "w" ]
+	then
+		echo -n "$char "		
+		MW
+	elif [ "$char" = "X" ] || [ "$char" = "x" ]
+	then
+		echo -n "$char "		
+		MX
+	elif [ "$char" = "Y" ] || [ "$char" = "y" ]
+	then
+		echo -n "$char "		
+		MY
+	elif [ "$char" = "Z" ] || [ "$char" = "z" ]
+	then
+		echo -n "$char "		
+		MZ
+	elif [ "$char" = "1" ] 
+	then
+		echo -n "$char "		
+		M1
+	elif [ "$char" = "2" ] 
+	then
+		echo -n "$char "		
+		M2
+	elif [ "$char" = "3" ] 
+	then
+		echo -n "$char "		
+		M3
+	elif [ "$char" = "4" ] 
+	then
+		echo -n "$char "		
+		M4
+	elif [ "$char" = "5" ] 
+	then
+		echo -n "$char "		
+		M5
+	elif [ "$char" = "6" ] 
+	then
+		echo -n "$char "		
+		M6
+	elif [ "$char" = "7" ] 
+	then
+		echo -n "$char "		
+		M7
+	elif [ "$char" = "8" ] 
+	then
+		echo -n "$char "		
+		M8
+	elif [ "$char" = "9" ] 
+	then
+		echo -n "$char "		
+		M9
+	elif [ "$char" = "0" ] 
+	then
+		echo -n "$char "		
+		M0
+	elif [ "$char" = "?" ] 
+	then
+		echo -n "$char "		
+		Mquestion
+	elif [ "$char" = "." ] 
+	then
+		echo -n "$char "		
+		Mperiod
+	elif [ "$char" = "," ] 
+	then
+		echo -n "$char "		
+		Mcomma
+	elif [ "$char" = "'" ] 
+	then
+		echo -n "$char "		
+		Mapostrophe
+	elif [ "$char" = "!" ] 
+	then
+		echo -n "$char "		
+		Mexclamation
+	elif [ "$char" = "/" ] 
+	then
+		echo -n "$char "		
+		Mslash
+	elif [ "$char" = "&" ] 
+	then
+		echo -n "$char "		
+		Mampersand
+	elif [ "$char" = ":" ] 
+	then
+		echo -n "$char "		
+		Mcolon
+	else
+		echo -n " Unrecognized Char ( $char ) "
+	fi
+	
+done < "$INPUT"
+
+echo ""
+main
+}
+
+function greet()
+{
+bold=`tput bold`
+normal=`tput sgr0`
+echo -n "${bold}Welcome "
+
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+echo -n "to "
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+echo -n "MORSENUX v.1.0 "
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+echo -n "by Hasan Karaahmet "
+play -qn -t alsa synth 0.15 sin 880 
+sleep 0.05
+echo -n "TA1HYK ${normal}"
+play -qn -t alsa synth 0.05 sin 880 
+sleep 0.05
+echo " "
+play -qn -t alsa synth 0.15 sin 880 
+}
+
+function main()
+{
+read -rep $'Type your text below and press enter to translate to Morse:\n' cleartext 
+echo $cleartext > file.txt
+morsetech
+}
+
+greet
+main
